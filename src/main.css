@@ -4,8 +4,7 @@
   box-sizing: border-box;
 }
 
-#root {
+body {
   background-color: rgb(1, 1, 34);
   color: whitesmoke;
-  height: 100vh;
 }

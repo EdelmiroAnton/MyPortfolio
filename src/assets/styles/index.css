@@ -1,0 +1,28 @@
+.container {
+  max-width: 500px;
+  height: 500px;
+  margin: 70px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+}
+
+.subcontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  width: inherit;
+  text-align: center;
+  line-height: 3;
+}
+
+.links {
+  width: inherit;
+  display: flex;
+  justify-content: space-evenly;
+}
