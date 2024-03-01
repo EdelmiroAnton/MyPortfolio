@@ -4,11 +4,11 @@ import "../assets/styles/button.css";
 const Button = ({ children }) => {
   return (
     <button className="btn">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
       {children}
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
     </button>
   );
 };

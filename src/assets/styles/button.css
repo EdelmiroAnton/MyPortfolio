@@ -33,15 +33,15 @@
 }
 
 .btn span:nth-child(1) {
-  height: 3px;
-  width: 200px;
+  height: 1px;
+  width: 50px;
   top: 0px;
   left: -200px;
   background: linear-gradient(to right, rgba(0, 0, 0, 0), #ffffff);
   border-top-right-radius: 1px;
   border-bottom-right-radius: 1px;
   animation: span1 2s linear infinite;
-  animation-delay: 1s;
+  animation-delay: 0s;
 }
 
 @keyframes span1 {
@@ -62,7 +62,7 @@
   border-bottom-left-radius: 1px;
   border-bottom-right-radius: 1px;
   animation: span2 2s linear infinite;
-  animation-delay: 2s;
+  animation-delay: 0s;
 }
 @keyframes span2 {
   0% {
@@ -81,7 +81,7 @@
   border-top-left-radius: 1px;
   border-bottom-left-radius: 1px;
   animation: span3 2s linear infinite;
-  animation-delay: 3s;
+  animation-delay: 0s;
 }
 @keyframes span3 {
   0% {
@@ -93,7 +93,7 @@
 }
 
 .btn span:nth-child(4) {
-  height: 50px;
+  height: 70px;
   width: 1px;
   bottom: -70px;
   left: 0px;
@@ -101,7 +101,7 @@
   border-top-right-radius: 1px;
   border-top-left-radius: 1px;
   animation: span4 2s linear infinite;
-  animation-delay: 4s;
+  animation-delay: 0s;
 }
 @keyframes span4 {
   0% {
