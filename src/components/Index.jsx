@@ -1,7 +1,7 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../assets/styles/index.css";
 import Loader from "./Loader";
-import { useState } from "react";
 
 const Index = () => {
   const [load, setLoad] = useState(true);
