@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import "../assets/styles/index.css";
+import Loader from "./Loader.jsx";
+
 const Index = () => {
   return (
     <>
+      <Loader />
       <div className="container">
         <div className="subcontainer">
           <div className="name slide-top">Edelmiro Antón</div>
