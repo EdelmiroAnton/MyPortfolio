@@ -22,12 +22,12 @@ const Index = () => {
               <Button>
                 <Link to="/about">About</Link>
               </Button>
-              <div className="projects">
+              <Button className="projects">
                 <Link to="/projects ">Projects</Link>
-              </div>
-              <div className="contact">
+              </Button>
+              <Button className="contact">
                 <Link to="/contact">Contact</Link>
-              </div>
+              </Button>
             </div>
           </div>
         </div>
