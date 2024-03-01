@@ -8,7 +8,7 @@ const Index = () => {
 
   setTimeout(() => {
     setLoad(false);
-  }, 3000);
+  }, 2000);
   return (
     <>
       {load ? (
