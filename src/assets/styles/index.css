@@ -25,3 +25,37 @@
   display: flex;
   justify-content: space-evenly;
 }
+
+/* ANIMATION */
+
+.slide-top {
+  animation: slide-top 1s;
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  10% {
+    transform: translateY(0);
+  }
+}
+
+.slide-bottom {
+  animation: slide-bottom 1s;
+}
+
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

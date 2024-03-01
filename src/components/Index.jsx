@@ -5,15 +5,15 @@ const Index = () => {
     <>
       <div className="container">
         <div className="subcontainer">
-          <div className="name">Edelmiro Antón</div>
+          <div className="name slide-top">Edelmiro Antón</div>
           <div className="links">
-            <div className="about">
+            <div className="about slide-bottom">
               <Link to="/about">About</Link>
             </div>
-            <div className="projects">
-              <Link to="/projects">Projects</Link>
+            <div className="projects slide-bottom">
+              <Link to="/projects ">Projects</Link>
             </div>
-            <div className="contact">
+            <div className="contact slide-bottom">
               <Link to="/contact">Contact</Link>
             </div>
           </div>
