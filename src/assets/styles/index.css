@@ -1,7 +1,7 @@
 .container {
-  max-width: 500px;
-  height: 500px;
-  margin: 70px auto;
+  max-width: 31.25rem; /* 500px*0.0625 = 31.25rem */
+  height: 31.25rem;
+  margin: 4.375rem auto; /* 70px*0.0625 = 4.375rem */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,8 +22,8 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 35px;
-  margin-bottom: 3px;
+  font-size: 2.1875rem;
+  margin-bottom: 0.187rem;
   text-shadow: 0 0 10px grey;
 }
 
@@ -35,8 +35,8 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  letter-spacing: 0.38em;
-  margin-left: 9.3px;
+  letter-spacing: 0.38rem;
+  margin-left: 0.58125rem;
   animation: infinite txtShadow;
   animation-duration: 5s;
 }
