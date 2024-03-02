@@ -24,6 +24,7 @@
   font-style: normal;
   font-size: 35px;
   margin-bottom: 3px;
+  text-shadow: 0 0 10px grey;
 }
 
 .frontend {
@@ -36,6 +37,21 @@
   font-style: normal;
   letter-spacing: 0.38em;
   margin-left: 9.3px;
+  animation: infinite txtShadow;
+  animation-duration: 5s;
+}
+
+@keyframes txtShadow {
+  0% {
+    text-shadow: 0 0 0px #ffffff;
+  }
+
+  50% {
+    text-shadow: 0 0 8px #ffffff;
+  }
+  100% {
+    text-shadow: 0 0 0px #ffffff;
+  }
 }
 
 .links {
