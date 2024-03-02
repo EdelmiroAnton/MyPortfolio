@@ -15,9 +15,27 @@
 }
 
 .name {
-  width: inherit;
+  width: auto;
   text-align: center;
-  line-height: 3;
+  line-height: 1;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  margin-bottom: 3px;
+}
+
+.frontend {
+  width: auto;
+  color: rgb(158, 158, 158);
+  text-align: center;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.38em;
+  margin-left: 9.3px;
 }
 
 .links {
@@ -25,7 +43,7 @@
   display: flex;
   justify-content: space-evenly;
   position: absolute;
-  top: 60%;
+  top: 63%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: fit-content;

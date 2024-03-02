@@ -17,11 +17,8 @@ const Index = () => {
       ) : (
         <div className="container">
           <div className="subcontainer">
-            <div className="name">
-              Edelmiro Antón
-              <br />
-              <span className="frontend">Frontend Developer</span>
-            </div>
+            <div className="name">Edelmiro Antón</div>
+            <div className="frontend">Frontend Developer</div>
             <div className="links">
               <Button>
                 <Link to="/about">About</Link>
