@@ -1,0 +1,31 @@
+.projects_container {
+  max-width: 43.75rem; /* 1200px*0.0625 = 31.25rem */
+  height: 31.25rem;
+  margin: 4.375rem auto; /* 70px*0.0625 = 4.375rem */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.projects_title {
+  width: auto;
+  text-align: center;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.1875rem;
+  text-shadow: 0 0 10px grey;
+  animation-name: project_title;
+  animation-duration: 5s;
+}
+
+@keyframes project_title {
+  0% {
+    margin-top: 300px;
+  }
+
+  100% {
+    margin-top: 20px;
+  }
+}
