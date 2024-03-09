@@ -19,23 +19,21 @@ const Projects = () => {
         <div className="projects_container">
           <div className="projects_title">PROJECTS</div>
           <div className="grid-container">
-            <div className="projects">
-              {arrayOfProjects.map((el) => (
-                <div key={el.id}>
-                  <p>{el.project_name}</p>
-                  <p>
-                    <Link to={el.project_code} target="_blank">
-                      GITHUB
-                    </Link>
-                  </p>
-                  <p>
-                    <Link to={el.project_link} target="_blank">
-                      TEST THE PROJECT
-                    </Link>
-                  </p>
-                </div>
-              ))}
-            </div>
+            {arrayOfProjects.map((el) => (
+              <div className="grid-item" key={el.id}>
+                <p>{el.project_name}</p>
+                <p>
+                  <Link to={el.project_code} target="_blank">
+                    GITHUB
+                  </Link>
+                </p>
+                <p>
+                  <Link to={el.project_link} target="_blank">
+                    TEST THE PROJECT
+                  </Link>
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       )}
