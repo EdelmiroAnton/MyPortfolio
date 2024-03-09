@@ -17,7 +17,7 @@
   font-size: 2.1875rem;
   text-shadow: 0 0 10px grey;
   animation-name: project_title;
-  animation-duration: 5s;
+  animation-duration: 4s;
 }
 
 @keyframes project_title {
@@ -36,6 +36,30 @@
   gap: 10px;
   background-color: #2196f3;
   padding: 10px;
+  animation: grid_opacity;
+  animation-duration: 4s;
+}
+
+@keyframes grid_opacity {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .grid-item {
