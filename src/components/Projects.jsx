@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Loader from "./Loader";
+import "../assets/styles/projects.css"
 
 const Projects = () => {
   const [load, setLoad] = useState(true);
