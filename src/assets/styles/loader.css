@@ -1,7 +1,7 @@
 .push-pop {
   --duration: 0.85;
-  height: 100px;
-  width: 100px;
+  height: 6.25rem;
+  width: 6.25rem;
   position: absolute;
   overflow: hidden;
   margin: auto;
