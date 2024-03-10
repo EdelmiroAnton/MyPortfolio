@@ -26,15 +26,17 @@ const Projects = () => {
               <div className="grid-item" key={el.id}>
                 <p className="project_name">{el.project_name}</p>
                 <div className="icons">
-                  <p className="project_code">
+                  <p className="project_code tooltip">
                     <Link to={el.project_code} target="_blank">
                       <FontAwesomeIcon icon={faCode} />
                     </Link>
+                    <div className="tooltiptext">Get the code</div>
                   </p>
-                  <p className="project_link">
+                  <p className="project_link tooltip">
                     <Link to={el.project_link} target="_blank">
                       <FontAwesomeIcon icon={faLaptop} />
                     </Link>
+                    <div className="tooltiptext">Test the App!</div>
                   </p>
                 </div>
               </div>
