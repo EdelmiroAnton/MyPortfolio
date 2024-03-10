@@ -2,8 +2,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Loader from "./Loader";
 import { arrayOfProjects } from "../helpers/arrayOfProjects";
-import "../assets/styles/projects.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode, faLaptop } from "@fortawesome/free-solid-svg-icons";
+
+import "../assets/styles/projects.css";
 const Projects = () => {
   const [load, setLoad] = useState(true);
 
@@ -24,12 +27,12 @@ const Projects = () => {
                 <p>{el.project_name}</p>
                 <p>
                   <Link to={el.project_code} target="_blank">
-                    GITHUB
+                    <FontAwesomeIcon icon={faCode} />
                   </Link>
                 </p>
                 <p>
                   <Link to={el.project_link} target="_blank">
-                    TEST THE PROJECT
+                    <FontAwesomeIcon icon={faLaptop} />
                   </Link>
                 </p>
               </div>
