@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 //Components
 import Loader from "./Loader";
 import BackArrow from "./BackArrow";
+import PageTitle from "./PageTitle";
 
 //Helpers
 import { arrayOfProjects } from "../helpers/arrayOfProjects";
@@ -29,7 +30,7 @@ const Projects = () => {
       ) : (
         <div className="projects_container">
           <BackArrow />
-          <div className="projects_title">PROJECTS</div>
+          <PageTitle>PROJECTS</PageTitle>
           <div className="grid-container">
             {arrayOfProjects.map((el) => (
               <div className="grid-item" key={el.id}>

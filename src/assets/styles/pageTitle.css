@@ -1,0 +1,13 @@
+.title {
+  width: auto;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.1875rem;
+  text-shadow: 0 0 10px grey;
+  animation-name: project_title;
+  animation-duration: 4s;
+}
