@@ -24,17 +24,19 @@ const Projects = () => {
           <div className="grid-container">
             {arrayOfProjects.map((el) => (
               <div className="grid-item" key={el.id}>
-                <p>{el.project_name}</p>
-                <p>
-                  <Link to={el.project_code} target="_blank">
-                    <FontAwesomeIcon icon={faCode} />
-                  </Link>
-                </p>
-                <p>
-                  <Link to={el.project_link} target="_blank">
-                    <FontAwesomeIcon icon={faLaptop} />
-                  </Link>
-                </p>
+                <p className="project_name">{el.project_name}</p>
+                <div className="icons">
+                  <p className="project_code">
+                    <Link to={el.project_code} target="_blank">
+                      <FontAwesomeIcon icon={faCode} />
+                    </Link>
+                  </p>
+                  <p className="project_link">
+                    <Link to={el.project_link} target="_blank">
+                      <FontAwesomeIcon icon={faLaptop} />
+                    </Link>
+                  </p>
+                </div>
               </div>
             ))}
           </div>
