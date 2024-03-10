@@ -1,12 +1,20 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+
+//Components
 import Loader from "./Loader";
+import BackArrow from "./BackArrow";
+
+//Helpers
 import { arrayOfProjects } from "../helpers/arrayOfProjects";
 
+//Fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faLaptop } from "@fortawesome/free-solid-svg-icons";
 
+//Styles
 import "../assets/styles/projects.css";
+
 const Projects = () => {
   const [load, setLoad] = useState(true);
 
@@ -20,6 +28,7 @@ const Projects = () => {
         <Loader />
       ) : (
         <div className="projects_container">
+          <BackArrow />
           <div className="projects_title">PROJECTS</div>
           <div className="grid-container">
             {arrayOfProjects.map((el) => (
