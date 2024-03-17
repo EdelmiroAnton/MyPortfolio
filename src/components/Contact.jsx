@@ -4,6 +4,9 @@ import { useState } from "react";
 import Loader from "./Loader";
 import PageTitle from "./PageTitle";
 import BackArrow from "./BackArrow";
+
+//styles
+import "../assets/styles/contact.css"
 const Contact = () => {
   const [load, setLoad] = useState(true);
 
