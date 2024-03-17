@@ -40,6 +40,8 @@ const Contact = () => {
               email: Yup.string()
                 .email("Invalid email address")
                 .required("Required"),
+              message: Yup.string().required("Required"),
+              jobType: Yup.string().required("Please, select one option"),
             })}
             onSubmit={(values, { setSubmitting }) => {
               setTimeout(() => {
@@ -49,7 +51,7 @@ const Contact = () => {
             }}
           >
             {(formik) => (
-              <Form action="" onSubmit={formik.handleSubmit}>
+              <Form action="" onSubmit={formik.handleSubmit} className="form">
                 <label htmlFor="firstName">First Name</label>
                 <Field
                   id="firstName"
@@ -58,8 +60,11 @@ const Contact = () => {
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.firstName}
+                  placeholder="John"
                 />
-                <ErrorMessage name="firstName" />
+                <div className="errorMessage">
+                  <ErrorMessage name="firstName" />
+                </div>
 
                 <label htmlFor="lastName">Last Name</label>
                 <Field
@@ -69,8 +74,11 @@ const Contact = () => {
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.lastName}
+                  placeholder="Doe"
                 />
-                <ErrorMessage name="lastName" />
+                <div className="errorMessage">
+                  <ErrorMessage name="lastName" />
+                </div>
 
                 <label htmlFor="email">Email Address</label>
                 <Field
@@ -80,8 +88,29 @@ const Contact = () => {
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.email}
+                  placeholder="Email"
                 />
-                <ErrorMessage name="email" />
+                <div className="errorMessage">
+                  <ErrorMessage name="email" />
+                </div>
+
+                <label htmlFor="message">How can I help you?</label>
+                <Field id="message" name="message" as="textarea" />
+                <div className="errorMessage">
+                  <ErrorMessage name="message" />
+                </div>
+
+                <label htmlFor="jobType">Job Type</label>
+                <Field id="jobType" name="jobType" as="select">
+                  <option value="">Select a job type</option>
+                  <option value="designer">Designer</option>
+                  <option value="developer">Developer</option>
+                  <option value="productManager">Product Manager</option>
+                  <option value="other">Other</option>
+                </Field>
+                <div className="errorMessage">
+                  <ErrorMessage name="jobType" />
+                </div>
 
                 <button type="submit">Submit</button>
               </Form>
