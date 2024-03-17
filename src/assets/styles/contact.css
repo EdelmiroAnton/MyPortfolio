@@ -8,6 +8,10 @@
   flex-direction: column;
 }
 
-.errorMessage {
+.error-message {
   color: #fc8181;
+}
+
+.no-error-message {
+  color: #60f874;
 }

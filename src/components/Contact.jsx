@@ -4,7 +4,7 @@ import { useState } from "react";
 import Loader from "./Loader";
 import PageTitle from "./PageTitle";
 import BackArrow from "./BackArrow";
-
+import MyInput from "./MyInput";
 //Formik
 import { ErrorMessage, Field, Form, Formik } from "formik";
 
@@ -52,7 +52,7 @@ const Contact = () => {
           >
             {(formik) => (
               <Form action="" onSubmit={formik.handleSubmit} className="form">
-                <label htmlFor="firstName">First Name</label>
+                {/* <label htmlFor="firstName">First Name</label>
                 <Field
                   id="firstName"
                   name="firstName"
@@ -64,21 +64,22 @@ const Contact = () => {
                 />
                 <div className="errorMessage">
                   <ErrorMessage name="firstName" />
-                </div>
+                </div> */}
+                <MyInput
+                  id="firstName"
+                  label="First Name"
+                  name="firstName"
+                  type="text"
+                  placeholder="John"
+                />
 
-                <label htmlFor="lastName">Last Name</label>
-                <Field
+                <MyInput
                   id="lastName"
+                  label="Last Name"
                   name="lastName"
                   type="text"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.lastName}
                   placeholder="Doe"
                 />
-                <div className="errorMessage">
-                  <ErrorMessage name="lastName" />
-                </div>
 
                 <label htmlFor="email">Email Address</label>
                 <Field
