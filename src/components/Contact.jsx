@@ -5,6 +5,8 @@ import Loader from "./Loader";
 import PageTitle from "./PageTitle";
 import BackArrow from "./BackArrow";
 import MyInput from "./MyInput";
+import MyEmail from "./MyEmail";
+
 //Formik
 import { ErrorMessage, Field, Form, Formik } from "formik";
 
@@ -13,7 +15,7 @@ import * as Yup from "yup";
 
 //styles
 import "../assets/styles/contact.css";
-import MyEmail from "./MyEmail";
+
 const Contact = () => {
   const [load, setLoad] = useState(true);
 
