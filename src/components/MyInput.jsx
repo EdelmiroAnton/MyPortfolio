@@ -9,11 +9,10 @@ const MyInput = ({ label, ...props }) => {
     <>
       <label htmlFor={props.id || props.name}>{label}</label>
       <input className="text-input" {...field} {...props} />
-      {meta.touched && meta.error ? (
+      {meta.touched && meta.error && (
         <div className="error-message">{meta.error}</div>
-      ) : (
-        <div className="no-error-message">Ok!</div>
       )}
+      {field.value.length > 3 && <div className="no-error-message">OK!</div>}
     </>
   );
 };
