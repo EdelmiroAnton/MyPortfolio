@@ -13,6 +13,7 @@ import * as Yup from "yup";
 
 //styles
 import "../assets/styles/contact.css";
+import MyEmail from "./MyEmail";
 const Contact = () => {
   const [load, setLoad] = useState(true);
 
@@ -81,19 +82,13 @@ const Contact = () => {
                   placeholder="Doe"
                 />
 
-                <label htmlFor="email">Email Address</label>
-                <Field
+                <MyEmail
                   id="email"
+                  label="Email"
                   name="email"
                   type="email"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.email}
-                  placeholder="Email"
+                  placeholder="youremail@example.com"
                 />
-                <div className="errorMessage">
-                  <ErrorMessage name="email" />
-                </div>
 
                 <label htmlFor="message">How can I help you?</label>
                 <Field id="message" name="message" as="textarea" />
