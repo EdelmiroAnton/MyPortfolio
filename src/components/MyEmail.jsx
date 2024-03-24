@@ -3,15 +3,18 @@
 import { useField } from "formik";
 
 const MyEmail = ({ label, ...props }) => {
-  const [field, meta] = useField(props);
+  const [field] = useField(props);
+  const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/g;
+  const testRegex = emailRegex.test(field.value);
   return (
     <>
       <label htmlFor={props.id || props.name}>{label}</label>
       <input className="text-input" {...field} {...props} />
-      {meta.touched && meta.error && (
-        <div className="error-message">{meta.error}</div>
+      {testRegex ? (
+        <div className="no-error-message">OK!</div>
+      ) : (
+        <div className="error-message">Invalid Email</div>
       )}
-      {field.value.includes("@") && <div className="no-error-message">OK!</div>}
     </>
   );
 };
