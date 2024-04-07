@@ -12,7 +12,7 @@ const MyInput = ({ label, ...props }) => {
       {meta.touched && meta.error && (
         <div className="error-message">{meta.error}</div>
       )}
-      {field.value.length > 3 && <div className="no-error-message">OK!</div>}
+      {field.value.length >= 3 && <div className="no-error-message">OK!</div>}
     </>
   );
 };

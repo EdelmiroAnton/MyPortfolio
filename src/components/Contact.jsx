@@ -13,11 +13,20 @@ import { ErrorMessage, Field, Form, Formik } from "formik";
 //Yup
 import * as Yup from "yup";
 
+//Fromspree
+import { useForm } from "@formspree/react";
+
 //styles
 import "../assets/styles/contact.css";
 
 const Contact = () => {
   const [load, setLoad] = useState(true);
+
+  const[state, handleSubmit] = useForm("xpzvoqgp")
+
+  if (state.succeeded) {
+    return <div>Thank you for signing up!</div>;
+  }
 
   setTimeout(() => {
     setLoad(false);
@@ -53,8 +62,14 @@ const Contact = () => {
               }, 400);
             }}
           >
-            {(formik) => (
-              <Form action="" onSubmit={formik.handleSubmit} className="form">
+            {
+            // (formik) => (
+              <Form
+                action="https://formspree.io/f/xpzvoqgp"
+                method="POST"
+                onSubmit={handleSubmit}
+                className="form"
+              >
                 <MyInput
                   id="firstName"
                   label="First Name"
@@ -94,9 +109,10 @@ const Contact = () => {
                 <div className="errorMessage">
                   <ErrorMessage name="jobType" />
                 </div>
-                <button type="submit">Submit</button>
+                <button type="submit">SUBMIT</button>
               </Form>
-            )}
+            // )
+            }
           </Formik>
         </div>
       )}
