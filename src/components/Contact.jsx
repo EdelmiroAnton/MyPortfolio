@@ -83,12 +83,6 @@ const Contact = () => {
                   label="Leave me a message!"
                 />
 
-                {/* <label htmlFor="message">How can I help you?</label>
-                <Field id="message" name="message" as="textarea" />
-                <div className="errorMessage">
-                  <ErrorMessage name="message" />
-                </div> */}
-
                 <label htmlFor="jobType">Job Type</label>
                 <Field id="jobType" name="jobType" as="select">
                   <option value="">Select a job type</option>
