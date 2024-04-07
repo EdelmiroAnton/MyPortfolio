@@ -6,7 +6,7 @@ import PageTitle from "./PageTitle";
 import BackArrow from "./BackArrow";
 import MyInput from "./MyInput";
 import MyEmail from "./MyEmail";
-
+import MyTextArea from "./MyTextArea";
 //Formik
 import { ErrorMessage, Field, Form, Formik } from "formik";
 
@@ -55,19 +55,6 @@ const Contact = () => {
           >
             {(formik) => (
               <Form action="" onSubmit={formik.handleSubmit} className="form">
-                {/* <label htmlFor="firstName">First Name</label>
-                <Field
-                  id="firstName"
-                  name="firstName"
-                  type="text"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.firstName}
-                  placeholder="John"
-                />
-                <div className="errorMessage">
-                  <ErrorMessage name="firstName" />
-                </div> */}
                 <MyInput
                   id="firstName"
                   label="First Name"
@@ -75,7 +62,6 @@ const Contact = () => {
                   type="text"
                   placeholder="John"
                 />
-
                 <MyInput
                   id="lastName"
                   label="Last Name"
@@ -83,7 +69,6 @@ const Contact = () => {
                   type="text"
                   placeholder="Doe"
                 />
-
                 <MyEmail
                   id="email"
                   label="Email"
@@ -91,12 +76,18 @@ const Contact = () => {
                   type="email"
                   placeholder="youremail@example.com"
                 />
+                <MyTextArea
+                  id="message"
+                  name="message"
+                  placeholder=" ... "
+                  label="Leave me a message!"
+                />
 
-                <label htmlFor="message">How can I help you?</label>
+                {/* <label htmlFor="message">How can I help you?</label>
                 <Field id="message" name="message" as="textarea" />
                 <div className="errorMessage">
                   <ErrorMessage name="message" />
-                </div>
+                </div> */}
 
                 <label htmlFor="jobType">Job Type</label>
                 <Field id="jobType" name="jobType" as="select">
@@ -109,7 +100,6 @@ const Contact = () => {
                 <div className="errorMessage">
                   <ErrorMessage name="jobType" />
                 </div>
-
                 <button type="submit">Submit</button>
               </Form>
             )}
