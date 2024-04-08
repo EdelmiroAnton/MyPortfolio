@@ -18,14 +18,20 @@ import { useForm } from "@formspree/react";
 
 //styles
 import "../assets/styles/contact.css";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const [load, setLoad] = useState(true);
 
-  const[state, handleSubmit] = useForm("xpzvoqgp")
+  const [state, handleSubmit] = useForm("xpzvoqgp");
 
   if (state.succeeded) {
-    return <div>Thank you for signing up!</div>;
+    return (
+      <div>
+        Thanks for your message!
+        <Link to={"https://my-portfolio-coral-iota.vercel.app/"}>Go back!</Link>
+      </div>
+    );
   }
 
   setTimeout(() => {
@@ -63,7 +69,7 @@ const Contact = () => {
             }}
           >
             {
-            // (formik) => (
+              // (formik) => (
               <Form
                 action="https://formspree.io/f/xpzvoqgp"
                 method="POST"
@@ -111,7 +117,7 @@ const Contact = () => {
                 </div>
                 <button type="submit">SUBMIT</button>
               </Form>
-            // )
+              // )
             }
           </Formik>
         </div>
