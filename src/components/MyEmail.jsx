@@ -8,7 +8,7 @@ const MyEmail = ({ label, ...props }) => {
   const testRegex = emailRegex.test(field.value);
   return (
     <>
-      <label htmlFor={props.id || props.name}>{label}</label>
+      <label htmlFor={props.id || props.name} className="label">{label}</label>
       <input className="text-input" {...field} {...props} />
       {testRegex ? (
         <div className="no-error-message">OK!</div>

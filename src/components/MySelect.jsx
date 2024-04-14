@@ -5,7 +5,7 @@ import { ErrorMessage } from "formik";
 const MySelect = ({ label, ...props }) => {
   return (
     <>
-      <label>{label}</label>
+      <label className="label">{label}</label>
       <select {...props} required>
         <option value="">Select a job type</option>
         <option value="designer">Designer</option>

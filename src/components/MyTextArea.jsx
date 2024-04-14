@@ -2,8 +2,8 @@
 const MyTextArea = ({ label, ...props }) => {
   return (
     <>
-      {label}
-      <textarea {...props} cols={30} rows={10} required></textarea>
+      <label className="label">{label}</label>
+      <textarea {...props} cols={30} rows={10} required className="text-input"></textarea>
     </>
   );
 };
