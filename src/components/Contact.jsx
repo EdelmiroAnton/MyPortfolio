@@ -7,8 +7,10 @@ import BackArrow from "./BackArrow";
 import MyInput from "./MyInput";
 import MyEmail from "./MyEmail";
 import MyTextArea from "./MyTextArea";
+import MySelect from "./MySelect";
+
 //Formik
-import { ErrorMessage, Field, Form, Formik } from "formik";
+import { Form, Formik } from "formik";
 
 //Yup
 import * as Yup from "yup";
@@ -104,18 +106,12 @@ const Contact = () => {
                   label="Leave me a message!"
                 />
 
-                <label htmlFor="jobType">Job Type</label>
-                <Field id="jobType" name="jobType" as="select">
-                  <option value="">Select a job type</option>
-                  <option value="designer">Designer</option>
-                  <option value="developer">Developer</option>
-                  <option value="productManager">Product Manager</option>
-                  <option value="other">Other</option>
-                </Field>
-                <div className="errorMessage">
-                  <ErrorMessage name="jobType" />
-                </div>
-                <button type="submit">SUBMIT</button>
+                <MySelect
+                  label="Job Type"
+                  id="jobType"
+                  name="jobType"
+                  as="select"
+                />
               </Form>
               // )
             }
