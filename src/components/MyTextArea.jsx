@@ -3,7 +3,7 @@ const MyTextArea = ({ label, ...props }) => {
   return (
     <>
       {label}
-      <textarea {...props} cols={30} rows={10}></textarea>
+      <textarea {...props} cols={30} rows={10} required></textarea>
     </>
   );
 };
