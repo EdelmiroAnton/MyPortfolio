@@ -16,7 +16,6 @@ const MySelect = ({ label, ...props }) => {
       <div className="errorMessage">
         <ErrorMessage name="jobType" />
       </div>
-      <button type="submit">SUBMIT</button>
     </>
   );
 };

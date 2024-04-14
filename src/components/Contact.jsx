@@ -112,6 +112,7 @@ const Contact = () => {
                   name="jobType"
                   as="select"
                 />
+                <button type="submit">SUBMIT</button>
               </Form>
               // )
             }
