@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
 
 //Components
@@ -30,7 +31,9 @@ const Contact = () => {
   if (state.succeeded) {
     return (
       <div>
-        Thanks for your message!
+        <p>
+          Thanks for your message! I'll try to answer you as soon as possible :)
+        </p>
         <Link to={"https://my-portfolio-coral-iota.vercel.app/"}>Go back!</Link>
       </div>
     );
