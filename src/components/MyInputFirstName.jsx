@@ -11,7 +11,13 @@ const MyInputFirstName = ({ faXmark, faCheck, label, ...props }) => {
         {label}
       </label>
       <div className="inputContainer">
-        <input className="text-input" {...field} {...props} required />
+        <input
+          className="text-input"
+          {...field}
+          {...props}
+          required
+          minLength={2}
+        />
         {meta.touched && meta.error && (
           <div className="error-message">{meta.error}</div>
         )}
