@@ -6,6 +6,7 @@ import Loader from "./Loader";
 import PageTitle from "./PageTitle";
 import BackArrow from "./BackArrow";
 import MyInputFirstName from "./MyInputFirstName";
+import MyInputLastName from "./MyInputLastName";
 import MyEmail from "./MyEmail";
 import MyTextArea from "./MyTextArea";
 import MySelect from "./MySelect";
@@ -88,7 +89,7 @@ const Contact = () => {
                   faCheck={<FontAwesomeIcon icon={faCheck} />}
                   faXmark={<FontAwesomeIcon icon={faXmark} />}
                 />
-                <MyInput
+                <MyInputLastName
                   id="lastName"
                   label="Last Name"
                   name="lastName"
