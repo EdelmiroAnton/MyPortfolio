@@ -1,7 +1,7 @@
 .contact_container {
   max-width: 43.75rem; /* 1200px*0.0625 = 31.25rem */
   margin: 1.875rem auto; /* 38px*0.0625 = 23.375rem */
-  background-color: rgb(48, 48, 48);
+  background-color: rgb(31, 31, 31);
   border-radius: 50px;
 }
 
@@ -13,7 +13,10 @@
 }
 
 .label {
-  padding-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  color: rgb(204, 204, 204);
+  font-family: "Kode Mono", monospace;
 }
 
 .text-input {

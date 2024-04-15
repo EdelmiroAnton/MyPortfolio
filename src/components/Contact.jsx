@@ -19,6 +19,10 @@ import * as Yup from "yup";
 //Fromspree
 import { useForm } from "@formspree/react";
 
+//Fontawesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark, faCheck } from "@fortawesome/free-solid-svg-icons";
+
 //styles
 import "../assets/styles/contact.css";
 import { Link } from "react-router-dom";
@@ -56,12 +60,12 @@ const Contact = () => {
             validationSchema={Yup.object({
               firstName: Yup.string()
                 .max(15, "Must be 15 characters or less")
-                .required("Required"),
+                .required(<FontAwesomeIcon icon={faXmark} />),
               lastName: Yup.string()
                 .max(20, "Must be 20 characters or less")
-                .required("Required"),
+                .required(<FontAwesomeIcon icon={faXmark} />),
               email: Yup.string()
-                .email("Invalid email address")
+                // .email(<FontAwesomeIcon icon={faXmark} />)
                 .required("Required"),
               message: Yup.string().required("Required"),
               jobType: Yup.string().required("Please, select one option"),
@@ -87,6 +91,7 @@ const Contact = () => {
                   name="firstName"
                   type="text"
                   placeholder="John"
+                  faCheck={<FontAwesomeIcon icon={faCheck} />}
                 />
                 <MyInput
                   id="lastName"
@@ -94,6 +99,7 @@ const Contact = () => {
                   name="lastName"
                   type="text"
                   placeholder="Doe"
+                  faCheck={<FontAwesomeIcon icon={faCheck} />}
                 />
                 <MyEmail
                   id="email"
@@ -101,12 +107,15 @@ const Contact = () => {
                   name="email"
                   type="email"
                   placeholder="youremail@example.com"
+                  faCheck={<FontAwesomeIcon icon={faCheck} />}
+                  faXmark={<FontAwesomeIcon icon={faXmark} />}
                 />
                 <MyTextArea
                   id="message"
                   name="message"
                   placeholder=" ... "
                   label="Leave me a message!"
+                  faCheck={<FontAwesomeIcon icon={faCheck} />}
                 />
 
                 <MySelect
@@ -114,6 +123,7 @@ const Contact = () => {
                   id="jobType"
                   name="jobType"
                   as="select"
+                  faCheck={<FontAwesomeIcon icon={faCheck} />}
                 />
                 <button type="submit">SUBMIT</button>
               </Form>
