@@ -11,12 +11,14 @@ const MyEmail = ({ faXmark, faCheck, label, ...props }) => {
       <label htmlFor={props.id || props.name} className="label">
         {label}
       </label>
-      <input className="text-input" {...field} {...props} required />
-      {testRegex ? (
-        <div className="no-error-message">{faCheck}</div>
-      ) : (
-        <div className="error-message">{faXmark}</div>
-      )}
+      <div className="inputContainer">
+        <input className="text-input" {...field} {...props} required />
+        {testRegex ? (
+          <div className="no-error-message">{faCheck}</div>
+        ) : (
+          <div className="error-message">{faXmark}</div>
+        )}
+      </div>
     </>
   );
 };

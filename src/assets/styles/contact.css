@@ -21,12 +21,17 @@
 
 .text-input,
 .select {
+  width: 30.063rem; /*418px*/
   border-style: none;
   border-radius: 30px;
   padding: 10px;
   background-color: whitesmoke;
 }
 
+.inputContainer {
+  display: flex;
+  align-items: center;
+}
 .select option {
   font-family: "Kode Mono", monospace;
 }
@@ -52,9 +57,10 @@
   background-color: rgb(146, 146, 146);
 }
 .error-message {
+  margin-left: 5px;
   color: #fc8181;
 }
-
 .no-error-message {
+  margin-left: 5px;
   color: #60f874;
 }

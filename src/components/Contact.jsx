@@ -58,15 +58,9 @@ const Contact = () => {
           <Formik
             initialValues={{ firstName: "", lastName: "", email: "" }}
             validationSchema={Yup.object({
-              firstName: Yup.string()
-                .max(15, "Must be 15 characters or less")
-                .required(<FontAwesomeIcon icon={faXmark} />),
-              lastName: Yup.string()
-                .max(20, "Must be 20 characters or less")
-                .required(<FontAwesomeIcon icon={faXmark} />),
-              email: Yup.string()
-                // .email(<FontAwesomeIcon icon={faXmark} />)
-                .required("Required"),
+              firstName: Yup.string(),
+              lastName: Yup.string(),
+              email: Yup.string(),
               message: Yup.string().required("Required"),
               jobType: Yup.string().required("Please, select one option"),
             })}
@@ -92,6 +86,7 @@ const Contact = () => {
                   type="text"
                   placeholder="John"
                   faCheck={<FontAwesomeIcon icon={faCheck} />}
+                  faXmark={<FontAwesomeIcon icon={faXmark} />}
                 />
                 <MyInput
                   id="lastName"
@@ -100,6 +95,7 @@ const Contact = () => {
                   type="text"
                   placeholder="Doe"
                   faCheck={<FontAwesomeIcon icon={faCheck} />}
+                  faXmark={<FontAwesomeIcon icon={faXmark} />}
                 />
                 <MyEmail
                   id="email"
@@ -125,7 +121,9 @@ const Contact = () => {
                   as="select"
                   faCheck={<FontAwesomeIcon icon={faCheck} />}
                 />
-                <button type="submit" className="button_submit">SUBMIT</button>
+                <button type="submit" className="button_submit">
+                  SUBMIT
+                </button>
               </Form>
               // )
             }
