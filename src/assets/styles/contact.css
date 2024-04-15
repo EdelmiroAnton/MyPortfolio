@@ -31,6 +31,26 @@
   font-family: "Kode Mono", monospace;
 }
 
+.button_submit {
+  width: 50%;
+  margin: 20px auto;
+  padding: 5px;
+  font-family: "Kode Mono", monospace;
+  font-size: 1.125rem;
+  font-weight: bold;
+  border-style: none;
+  border-radius: 30px;
+  transition: 0.1s all ease;
+  background-color: rgb(185, 185, 185);
+}
+
+.button_submit:hover {
+  cursor: pointer;
+  background-color: rgb(163, 163, 163);
+}
+.button_submit:focus {
+  background-color: rgb(146, 146, 146);
+}
 .error-message {
   color: #fc8181;
 }

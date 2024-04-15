@@ -125,7 +125,7 @@ const Contact = () => {
                   as="select"
                   faCheck={<FontAwesomeIcon icon={faCheck} />}
                 />
-                <button type="submit">SUBMIT</button>
+                <button type="submit" className="button_submit">SUBMIT</button>
               </Form>
               // )
             }
