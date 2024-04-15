@@ -6,8 +6,10 @@ const MySelect = ({ label, ...props }) => {
   return (
     <>
       <label className="label">{label}</label>
-      <select {...props} required>
-        <option value="">Select a job type</option>
+      <select {...props} className="select" required>
+        <option value="" disabled>
+          Select a job type
+        </option>
         <option value="designer">Designer</option>
         <option value="developer">Developer</option>
         <option value="productManager">Product Manager</option>
