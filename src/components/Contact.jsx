@@ -5,7 +5,7 @@ import { useState } from "react";
 import Loader from "./Loader";
 import PageTitle from "./PageTitle";
 import BackArrow from "./BackArrow";
-import MyInput from "./MyInput";
+import MyInputFirstName from "./MyInputFirstName";
 import MyEmail from "./MyEmail";
 import MyTextArea from "./MyTextArea";
 import MySelect from "./MySelect";
@@ -79,7 +79,7 @@ const Contact = () => {
                 onSubmit={handleSubmit}
                 className="form"
               >
-                <MyInput
+                <MyInputFirstName
                   id="firstName"
                   label="First Name"
                   name="firstName"

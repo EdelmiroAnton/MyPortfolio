@@ -3,7 +3,7 @@
 import { useField } from "formik";
 import React from "react";
 
-const MyInput = ({ faXmark, faCheck, label, ...props }) => {
+const MyInputFirstName = ({ faXmark, faCheck, label, ...props }) => {
   const [field, meta] = useField(props);
   return (
     <>
@@ -26,4 +26,4 @@ const MyInput = ({ faXmark, faCheck, label, ...props }) => {
   );
 };
 
-export default MyInput;
+export default MyInputFirstName;
