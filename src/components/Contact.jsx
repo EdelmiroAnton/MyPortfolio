@@ -110,7 +110,7 @@ const Contact = () => {
                 <MyTextArea
                   id="message"
                   name="message"
-                  placeholder=" ... "
+                  placeholder="..."
                   label="Leave me a message!"
                   faCheck={<FontAwesomeIcon icon={faCheck} />}
                 />

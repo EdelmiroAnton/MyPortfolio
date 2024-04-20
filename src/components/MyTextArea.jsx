@@ -8,7 +8,7 @@ const MyTextArea = ({ label, ...props }) => {
         cols={30}
         rows={10}
         required
-        className="text-input"
+        className="textarea"
       ></textarea>
     </>
   );
