@@ -55,7 +55,7 @@ const Contact = () => {
       ) : (
         <div className="contact_container">
           <BackArrow />
-          <PageTitle>Contact Me!</PageTitle>
+          <PageTitle>CONTACT ME!</PageTitle>
           <Formik
             initialValues={{ firstName: "", lastName: "", email: "" }}
             validationSchema={Yup.object({
