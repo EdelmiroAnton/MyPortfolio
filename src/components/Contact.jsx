@@ -54,81 +54,83 @@ const Contact = () => {
         <Loader />
       ) : (
         <div className="contact_container">
-          <BackArrow />
           <PageTitle>CONTACT ME!</PageTitle>
-          <Formik
-            initialValues={{ firstName: "", lastName: "", email: "" }}
-            validationSchema={Yup.object({
-              firstName: Yup.string(),
-              lastName: Yup.string(),
-              email: Yup.string(),
-              message: Yup.string().required("Required"),
-              jobType: Yup.string().required("Please, select one option"),
-            })}
-            onSubmit={(values, { setSubmitting }) => {
-              setTimeout(() => {
-                alert(JSON.stringify(values, null, 2));
-                setSubmitting(false);
-              }, 400);
-            }}
-          >
-            {
-              // (formik) => (
-              <Form
-                action="https://formspree.io/f/xpzvoqgp"
-                method="POST"
-                onSubmit={handleSubmit}
-                className="form"
-              >
-                <MyInputFirstName
-                  id="firstName"
-                  label="First Name"
-                  name="firstName"
-                  type="text"
-                  placeholder="John"
-                  faCheck={<FontAwesomeIcon icon={faCheck} />}
-                  faXmark={<FontAwesomeIcon icon={faXmark} />}
-                />
-                <MyInputLastName
-                  id="lastName"
-                  label="Last Name"
-                  name="lastName"
-                  type="text"
-                  placeholder="Doe"
-                  faCheck={<FontAwesomeIcon icon={faCheck} />}
-                  faXmark={<FontAwesomeIcon icon={faXmark} />}
-                />
-                <MyEmail
-                  id="email"
-                  label="Email"
-                  name="email"
-                  type="email"
-                  placeholder="youremail@example.com"
-                  faCheck={<FontAwesomeIcon icon={faCheck} />}
-                  faXmark={<FontAwesomeIcon icon={faXmark} />}
-                />
-                <MyTextArea
-                  id="message"
-                  name="message"
-                  placeholder="..."
-                  label="Leave me a message!"
-                  faCheck={<FontAwesomeIcon icon={faCheck} />}
-                />
+          <BackArrow />
+          <div className="form_container">
+            <Formik
+              initialValues={{ firstName: "", lastName: "", email: "" }}
+              validationSchema={Yup.object({
+                firstName: Yup.string(),
+                lastName: Yup.string(),
+                email: Yup.string(),
+                message: Yup.string().required("Required"),
+                jobType: Yup.string().required("Please, select one option"),
+              })}
+              onSubmit={(values, { setSubmitting }) => {
+                setTimeout(() => {
+                  alert(JSON.stringify(values, null, 2));
+                  setSubmitting(false);
+                }, 400);
+              }}
+            >
+              {
+                // (formik) => (
+                <Form
+                  action="https://formspree.io/f/xpzvoqgp"
+                  method="POST"
+                  onSubmit={handleSubmit}
+                  className="form"
+                >
+                  <MyInputFirstName
+                    id="firstName"
+                    label="First Name"
+                    name="firstName"
+                    type="text"
+                    placeholder="John"
+                    faCheck={<FontAwesomeIcon icon={faCheck} />}
+                    faXmark={<FontAwesomeIcon icon={faXmark} />}
+                  />
+                  <MyInputLastName
+                    id="lastName"
+                    label="Last Name"
+                    name="lastName"
+                    type="text"
+                    placeholder="Doe"
+                    faCheck={<FontAwesomeIcon icon={faCheck} />}
+                    faXmark={<FontAwesomeIcon icon={faXmark} />}
+                  />
+                  <MyEmail
+                    id="email"
+                    label="Email"
+                    name="email"
+                    type="email"
+                    placeholder="youremail@example.com"
+                    faCheck={<FontAwesomeIcon icon={faCheck} />}
+                    faXmark={<FontAwesomeIcon icon={faXmark} />}
+                  />
+                  <MyTextArea
+                    id="message"
+                    name="message"
+                    placeholder="..."
+                    label="Leave me a message!"
+                    faCheck={<FontAwesomeIcon icon={faCheck} />}
+                  />
 
-                <MySelect
-                  label="Job Type"
-                  id="jobType"
-                  name="jobType"
-                  as="select"
-                  faCheck={<FontAwesomeIcon icon={faCheck} />}
-                />
-                <button type="submit" className="button_submit">
-                  SUBMIT
-                </button>
-              </Form>
-              // )
-            }
-          </Formik>
+                  <MySelect
+                    label="Job Type"
+                    id="jobType"
+                    name="jobType"
+                    as="select"
+                    faCheck={<FontAwesomeIcon icon={faCheck} />}
+                  />
+                  <button type="submit" className="button_submit">
+                    SUBMIT
+                  </button>
+                </Form>
+                // )
+              }
+            </Formik>
+          </div>
         </div>
       )}
     </>
