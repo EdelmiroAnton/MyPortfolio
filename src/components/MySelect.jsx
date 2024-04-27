@@ -7,7 +7,7 @@ const MySelect = ({ label, ...props }) => {
     <>
       <label className="label">{label}</label>
       <select {...props} className="select" required>
-        <option value="" disabled>
+        <option value="" disabled selected>
           Select a job type
         </option>
         <option value="designer">Designer</option>
