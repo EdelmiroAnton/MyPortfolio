@@ -24,9 +24,11 @@ import { useForm } from "@formspree/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark, faCheck } from "@fortawesome/free-solid-svg-icons";
 
+//SweetAlert
+import Swal from "sweetalert2";
+
 //styles
 import "../assets/styles/contact.css";
-import { Link } from "react-router-dom";
 
 const Contact = () => {
   const [load, setLoad] = useState(true);
@@ -34,14 +36,15 @@ const Contact = () => {
   const [state, handleSubmit] = useForm("xpzvoqgp");
 
   if (state.succeeded) {
-    return (
-      <div>
-        <p>
-          Thanks for your message! I'll try to answer you as soon as possible :)
-        </p>
-        <Link to={"https://my-portfolio-coral-iota.vercel.app/"}>Go back!</Link>
-      </div>
-    );
+    return Swal.fire({
+      title: "Thanks for your message!",
+      text: "I'll try to answer you as soon as possible :)",
+      icon: "success",
+      confirmButtonText: `<a href="https://my-portfolio-coral-iota.vercel.app/"
+        style="color: white; text-decoration: none">
+        Go back!
+      </a>`,
+    });
   }
 
   setTimeout(() => {
