@@ -116,7 +116,6 @@ const Contact = () => {
                     name="message"
                     placeholder="..."
                     label="Leave me a message!"
-                    faCheck={<FontAwesomeIcon icon={faCheck} />}
                   />
 
                   <MySelect
@@ -124,7 +123,6 @@ const Contact = () => {
                     id="jobType"
                     name="jobType"
                     as="select"
-                    faCheck={<FontAwesomeIcon icon={faCheck} />}
                   />
                   <button type="submit" className="button_submit">
                     SUBMIT
