@@ -26,24 +26,28 @@ import { faXmark, faCheck } from "@fortawesome/free-solid-svg-icons";
 
 //SweetAlert
 import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
 
 //styles
 import "../assets/styles/contact.css";
 
 const Contact = () => {
   const [load, setLoad] = useState(true);
-
   const [state, handleSubmit] = useForm("xpzvoqgp");
+  const MySwal = withReactContent(Swal);
 
   if (state.succeeded) {
-    return Swal.fire({
+    return MySwal.fire({
       title: "Thanks for your message!",
       text: "I'll try to answer you as soon as possible :)",
       icon: "success",
-      confirmButtonText: `<a href="https://my-portfolio-coral-iota.vercel.app/"
-        style="color: white; text-decoration: none">
-        Go back!
-      </a>`,
+      confirmButtonText: `
+        <a
+          href="https://my-portfolio-coral-iota.vercel.app/"
+          style="color: white; text-decoration: none">
+          Go back!
+        </a>
+      `,
     });
   }
 
