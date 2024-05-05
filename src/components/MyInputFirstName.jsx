@@ -6,7 +6,7 @@ import React from "react";
 const MyInputFirstName = ({ faXmark, faCheck, label, ...props }) => {
   const [field, meta] = useField(props);
   return (
-    <>
+    <div className="firstName">
       <label htmlFor={props.id || props.name} className="label">
         {label}
       </label>
@@ -28,7 +28,7 @@ const MyInputFirstName = ({ faXmark, faCheck, label, ...props }) => {
           <div className="no-error-message">{faCheck}</div>
         )}
       </div>
-    </>
+    </div>
   );
 };
 
