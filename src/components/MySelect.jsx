@@ -4,7 +4,7 @@ import { ErrorMessage } from "formik";
 
 const MySelect = ({ label, ...props }) => {
   return (
-    <>
+    <div className="selectContainer">
       <label className="label">{label}</label>
       <select {...props} className="select" required>
         <option value="" disabled selected>
@@ -18,7 +18,7 @@ const MySelect = ({ label, ...props }) => {
       <div className="errorMessage">
         <ErrorMessage name="jobType" />
       </div>
-    </>
+    </div>
   );
 };
 

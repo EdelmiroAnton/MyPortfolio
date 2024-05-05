@@ -144,7 +144,8 @@
   .firstName,
   .lastName,
   .email,
-  .textareaContainer {
+  .textareaContainer,
+  .selectContainer {
     width: 225px;
     display: flex;
     flex-direction: column;
