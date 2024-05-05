@@ -98,6 +98,10 @@
 }
 
 @media (max-width: 767px) {
+  .title_container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   .contact_container {
     max-width: 21.875rem; /* 450px*0.0625 = 28.125rem */
     margin: 2.375rem auto; /* 38px*0.0625 = 23.375rem */

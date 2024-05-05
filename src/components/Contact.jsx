@@ -61,8 +61,10 @@ const Contact = () => {
         <Loader />
       ) : (
         <div className="contact_container">
-          <BackArrow />
-          <PageTitle>CONTACT ME!</PageTitle>
+          <div className="title_container">
+            <BackArrow />
+            <PageTitle>CONTACT ME!</PageTitle>
+          </div>
           <div className="form_container">
             <Formik
               initialValues={{ firstName: "", lastName: "", email: "" }}
