@@ -7,7 +7,7 @@ const MyEmail = ({ faXmark, faCheck, label, ...props }) => {
   const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/g;
   const testRegex = emailRegex.test(field.value);
   return (
-    <>
+    <div className="email">
       <label htmlFor={props.id || props.name} className="label">
         {label}
       </label>
@@ -19,7 +19,7 @@ const MyEmail = ({ faXmark, faCheck, label, ...props }) => {
           <div className="error-message">{faXmark}</div>
         )}
       </div>
-    </>
+    </div>
   );
 };
 
