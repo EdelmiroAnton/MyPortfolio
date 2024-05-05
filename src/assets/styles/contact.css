@@ -114,6 +114,8 @@
     border-radius: 50px;
     animation: container_opacity;
     animation-duration: 4s;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
   @keyframes container_opacity {
