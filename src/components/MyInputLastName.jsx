@@ -5,7 +5,7 @@ import { useField } from "formik";
 const MyInputLastName = ({ faXmark, faCheck, label, ...props }) => {
   const [field, meta] = useField(props);
   return (
-    <>
+    <div className="lastName">
       <label htmlFor={props.id || props.name} className="label">
         {label}
       </label>
@@ -27,7 +27,7 @@ const MyInputLastName = ({ faXmark, faCheck, label, ...props }) => {
           <div className="no-error-message">{faCheck}</div>
         )}
       </div>
-    </>
+    </div>
   );
 };
 

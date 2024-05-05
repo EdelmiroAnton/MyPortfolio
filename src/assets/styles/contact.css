@@ -141,7 +141,8 @@
     /* margin: auto; */
   }
 
-  .firstName {
+  .firstName,
+  .lastName {
     /* width: 225px;  */
     display: flex;
     flex-direction: column;
