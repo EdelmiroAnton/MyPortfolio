@@ -29,8 +29,10 @@ const Projects = () => {
         <Loader />
       ) : (
         <div className="projects_container">
-          <BackArrow />
-          <PageTitle>PROJECTS</PageTitle>
+          <div className="title_container">
+            <BackArrow />
+            <PageTitle>PROJECTS</PageTitle>
+          </div>
           <div className="grid-container">
             {arrayOfProjects.map((el) => (
               <div className="grid-item" key={el.id}>
