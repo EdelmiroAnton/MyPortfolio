@@ -38,6 +38,7 @@
     font-style: normal;
     letter-spacing: 0.38rem;
     margin-left: 0.58125rem;
+    margin-bottom: 1.563rem;
     animation: infinite txtShadow;
     animation-duration: 5s;
   }
@@ -56,13 +57,13 @@
   }
 
   .links {
-    width: inherit;
+    /* width: inherit; */
     display: flex;
-    justify-content: space-evenly;
-    position: absolute;
+    justify-content: center;
+    /* position: absolute;
     top: 63%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     width: fit-content;
     height: auto;
   }
