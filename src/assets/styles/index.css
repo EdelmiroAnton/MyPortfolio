@@ -1,67 +1,139 @@
-.container {
-  max-width: 31.25rem; /* 500px*0.0625 = 31.25rem */
-  height: 31.25rem;
-  margin: 4.375rem auto; /* 70px*0.0625 = 4.375rem */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.subcontainer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.name {
-  width: auto;
-  text-align: center;
-  line-height: 1;
-  font-family: "Kode Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2.1875rem;
-  margin-bottom: 0.187rem;
-  text-shadow: 0 0 10px grey;
-}
-
-.frontend {
-  width: auto;
-  color: rgb(158, 158, 158);
-  text-align: center;
-  font-family: "Kode Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 0.38rem;
-  margin-left: 0.58125rem;
-  animation: infinite txtShadow;
-  animation-duration: 5s;
-}
-
-@keyframes txtShadow {
-  0% {
-    text-shadow: 0 0 0px #ffffff;
+@media (min-width: 768px) {
+  .container {
+    max-width: 31.25rem; /* 500px*0.0625 = 31.25rem */
+    height: 31.25rem;
+    margin: 4.375rem auto; /* 70px*0.0625 = 4.375rem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  50% {
-    text-shadow: 0 0 8px #ffffff;
+  .subcontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  100% {
-    text-shadow: 0 0 0px #ffffff;
+
+  .name {
+    width: auto;
+    text-align: center;
+    line-height: 1;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.1875rem;
+    margin-bottom: 0.187rem;
+    text-shadow: 0 0 10px grey;
+  }
+
+  .frontend {
+    width: auto;
+    color: rgb(158, 158, 158);
+    text-align: center;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.38rem;
+    margin-left: 0.58125rem;
+    animation: infinite txtShadow;
+    animation-duration: 5s;
+  }
+
+  @keyframes txtShadow {
+    0% {
+      text-shadow: 0 0 0px #ffffff;
+    }
+
+    50% {
+      text-shadow: 0 0 8px #ffffff;
+    }
+    100% {
+      text-shadow: 0 0 0px #ffffff;
+    }
+  }
+
+  .links {
+    width: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height: auto;
   }
 }
 
-.links {
-  width: inherit;
-  display: flex;
-  justify-content: space-evenly;
-  position: absolute;
-  top: 63%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: fit-content;
-  height: auto;
+@media (max-width: 767px) {
+  .container {
+    max-width: 31.25rem; /* 500px*0.0625 = 31.25rem */
+    height: 31.25rem;
+    margin: 4.375rem auto; /* 70px*0.0625 = 4.375rem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subcontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .name {
+    width: auto;
+    text-align: center;
+    line-height: 1;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.1875rem;
+    margin-bottom: 0.187rem;
+    text-shadow: 0 0 10px grey;
+  }
+
+  .frontend {
+    width: auto;
+    color: rgb(158, 158, 158);
+    text-align: center;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.38rem;
+    margin-left: 0.58125rem;
+    animation: infinite txtShadow;
+    animation-duration: 5s;
+  }
+
+  @keyframes txtShadow {
+    0% {
+      text-shadow: 0 0 0px #ffffff;
+    }
+
+    50% {
+      text-shadow: 0 0 8px #ffffff;
+    }
+    100% {
+      text-shadow: 0 0 0px #ffffff;
+    }
+  }
+
+  .links {
+    width: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height: auto;
+  }
 }
