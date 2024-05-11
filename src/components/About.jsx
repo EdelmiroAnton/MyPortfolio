@@ -4,6 +4,10 @@ import Loader from "./Loader";
 //Components
 import PageTitle from "./PageTitle";
 import BackArrow from "./BackArrow";
+
+//Styles
+import "../assets/styles/aboutMe.css"
+
 const About = () => {
   const [load, setLoad] = useState(true);
 
@@ -16,7 +20,7 @@ const About = () => {
       {load ? (
         <Loader />
       ) : (
-        <div className="aboutme_container">
+        <div className="aboutMe_container">
           <div className="title_container">
             <BackArrow />
             <PageTitle>ABOUT ME</PageTitle>
