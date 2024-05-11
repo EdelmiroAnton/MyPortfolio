@@ -20,10 +20,10 @@ const MyInputLastName = ({ faXmark, faCheck, label, ...props }) => {
         {meta.touched && meta.error && (
           <div className="error-message">{meta.error}</div>
         )}
-        {field.value.length < 3 && (
+        {field.value.length < 2 && (
           <div className="error-message">{faXmark}</div>
         )}
-        {field.value.length >= 3 && (
+        {field.value.length >= 2 && (
           <div className="no-error-message">{faCheck}</div>
         )}
       </div>
