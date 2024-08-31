@@ -109,6 +109,7 @@
     display: grid;
     justify-content: center;
     align-content: center;
+    cursor: pointer;
   }
 
   .grid-item:hover,
@@ -254,6 +255,7 @@
     display: grid;
     justify-content: center;
     align-content: center;
+    cursor: pointer;
   }
 
   .grid-item:hover,
