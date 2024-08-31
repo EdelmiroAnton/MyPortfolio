@@ -25,14 +25,14 @@ const About = () => {
             <BackArrow />
             <PageTitle>ABOUT ME</PageTitle>
           </div>
-          <div className="aboutme_text">
+          <div className="aboutMe_text">
             <p>
               Hi! I’m Edelmiro Antón, an Argentinian Frontend developer based in
               Valencia, Spain 🏖️.
             </p>
             <p>
               My interest in the web development started in 2020 when we were in
-              quarantine due to the Covic-19 pandemic 😷. I started studying the
+              quarantine due to the Covid-19 pandemic 😷. I started studying the
               basis (HTML and CSS) and making small projects to practice 💻.{" "}
             </p>
             <p>
@@ -44,7 +44,7 @@ const About = () => {
               {" "}
               I realize that as a developer I must be constantly watching the
               last web development technologies applied in the market. Related
-              with this, I’m studying Typescript and also MySQL to connect apps
+              with this, I’m studying Typescript and also MySQL, to connect apps
               with the backend.
             </p>
           </div>
